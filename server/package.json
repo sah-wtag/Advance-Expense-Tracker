@@ -1,6 +1,6 @@
 {
-  "name": "sadman-json-server-expense-tracker",
-  "description": "Example in memory Expense Tracker api with json-server by Sadman Ahmed",
+  "name": "json-server-expense-tracker",
+  "description": "Example in memory Expense Tracker api with json-server",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {

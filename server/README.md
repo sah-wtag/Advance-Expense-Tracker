@@ -1,4 +1,4 @@
-# Sadman Ahmed json server expense tracker
+# Expense Tracker React RTK CRUD Operations 
 
 Example in memory expense tracker api with json-server
 
