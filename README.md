@@ -21,7 +21,19 @@
 1. Add the `store` over app level in `main`
 2. In `Form` component, we introduced `name, type and amount` constants to take the value from form level and we `dispatch` them to `createTransaction` action to create the transaction object and also it gets the state properly and update our server.
 
-# In this commit, List Transactions: Getting list of transactions
+# List Transactions: Getting list of transactions
 
 1. `Transactions` component updated to get the instants transactions made up and passing them by loop in to `Transaction` component to show case properly.
 2. We have `isLoading`, `isError` and `Transctions` state properly in the Transactions components
+
+# In this commit, Editing Transaction
+
+1. Fetch all the available transaction in the `transactions` component initially with the `useEffect` & `dispatching` `fetchTransactions` action
+2. Reset the form after creating a transaction
+3. `Cancel Edit button` introduced when `EDITING` going on, and will redirect to reset the states
+4. We added `editActive` & `editInActive` actions in `reducers` in `transactionSlice` which will update a new value `editing` in our `state` level.
+5. `Transaction component` introduced `dispatch` the `editActive` action when we are `clicking` the `EDIT` button
+6. Form component restructured dynmically
+   6.1 We set the button labels `Add Transaction` and `Update Transaction` dynamicelly
+   6.2 This buttons onSubmit action is also dynamic now and we added `handleUpdate` method which will `dispatch` `changeTransaction` action.
+   6.3 We introduced `editMode` state here which is default `false` and is using for the dynamic places, it is getting true automatically at first when `state.transaction` is getting `editing` attribute values and also update the state of name, type and amount with the upcoming editing values.
