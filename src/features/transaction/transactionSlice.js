@@ -18,7 +18,7 @@ export const fetchTransactions = createAsyncThunk(
   "transaction/fetchTransactions",
   async () => {
     const transactions = await getTransactions();
-    
+
     return transactions;
   }
 );
