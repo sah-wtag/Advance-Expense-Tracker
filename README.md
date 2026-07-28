@@ -1,3 +1,9 @@
+# Live link 
+https://sadman-expense-tracker.netlify.app/
+
+# Go to this branch for the whole code 
+https://github.com/sah-wtag/Advance-Expense-Tracker/tree/Advance-Expanse-Tracker
+
 # React RTK with complete CRUD operations with JSON server locally
 
 Live Project link: https://sadman-expense-tracker.netlify.app/
@@ -62,3 +68,4 @@ https://6a68b87cb2789286ad701c1f.mockapi.io/api/v1/transactions
 ```
 3. We have updated `axios.js` to fetch the `baseURL` dynamically, so when we are in localhost, we have to follow the json server starting commands and when it is not local, it will set the URL to the mock server. We set the rules in `isLocal.js`.
 4. Live link: https://sadman-expense-tracker.netlify.app/
+2. We have set up the server level codes 
