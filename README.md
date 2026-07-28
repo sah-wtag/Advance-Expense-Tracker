@@ -41,7 +41,12 @@
 
    6.3 We introduced `editMode` state here which is default `false` and is using for the dynamic places, it is getting true automatically at first when `state.transaction` is getting `editing` attribute values and also update the state of name, type and amount with the upcoming editing values.
 
-# In this commit, Delete Transaction
+# Delete Transaction
 
 1. `Delete` function workable by calling `handleDelete` when pressing the `delete button`.
 2. We `dispatched` `removeTransaction` action with the id
+
+# In this commit, Calculate Final Balance
+
+1. We are calculating the final balance in Balance component
+2. We introduced a function to separate the amounts with comma.
