@@ -1,5 +1,7 @@
 # React RTK with complete CRUD operations with JSON server locally
 
+Live Project link: https://sadman-expense-tracker.netlify.app/
+
 # UI basic Implementation
 
 1. We have made a basic setup and UI imeplementation in our project with some components
@@ -46,7 +48,17 @@
 1. `Delete` function workable by calling `handleDelete` when pressing the `delete button`.
 2. We `dispatched` `removeTransaction` action with the id
 
-# In this commit, Calculate Final Balance
+# Calculate Final Balance
 
-1. We are calculating the final balance in Balance component
-2. We introduced a function to separate the amounts with comma.
+1. We are calculating the `final balance` in `Balance` component
+2. We introduced a function to `separate the amounts with comma`.
+
+
+# In this commit, we have updated the codebase 
+1. we have mocked our API responses in this server https://mockapi.io/
+2. We have created this 1 endpoint for this case with the jsons provided already in our db_videos.json
+```
+https://6a68b87cb2789286ad701c1f.mockapi.io/api/v1/transactions
+```
+3. We have updated `axios.js` to fetch the `baseURL` dynamically, so when we are in localhost, we have to follow the json server starting commands and when it is not local, it will set the URL to the mock server. We set the rules in `isLocal.js`.
+4. Live link: https://sadman-expense-tracker.netlify.app/
